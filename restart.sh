@@ -1,5 +1,7 @@
 #!/bin/bash
 echo "go build"
+git checkout master_dev
+git pull
 go mod tidy
 go build -o go-admin main.go
 chmod +x ./go-admin
